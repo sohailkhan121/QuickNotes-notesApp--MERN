@@ -70,6 +70,13 @@ const NoteDetailPage = () => {
       </div>
     );
   }
+  if (!note) {
+  return (
+    <div className="min-h-screen bg-base-200 flex items-center justify-center">
+      <p className="text-red-500 text-lg">Note not found or failed to load.</p>
+    </div>
+  );
+}
 
   return (
     <div className="min-h-screen bg-base-200">
